@@ -10,9 +10,12 @@ import {
 } from "@nestjs/common";
 
 export interface SeederOptions {
-  imports?: Array<
-    Type<any> | DynamicModule | Promise<DynamicModule> | ForwardReference
-  >;
+  imports?: (
+    | Type
+    | DynamicModule
+    | Promise<DynamicModule>
+    | ForwardReference
+  )[];
   providers?: Provider[];
 }
 
@@ -22,7 +25,7 @@ export interface SeederRunner {
 
 async function bootstrap(options: SeederModuleOptions) {
   const app = await NestFactory.createApplicationContext(
-    SeederModule.register(options)
+    SeederModule.register(options),
   );
   const seedersService = app.get(SeederService);
   await seedersService.run();

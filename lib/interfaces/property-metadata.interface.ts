@@ -1,7 +1,7 @@
 import {
   FactoryValueGenerator,
   FactoryValue,
-} from '../decorators/factory.decorator';
+} from "../decorators/factory.decorator";
 
 export interface PropertyMetadata {
   // eslint-disable-next-line @typescript-eslint/ban-types

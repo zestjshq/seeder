@@ -5,11 +5,13 @@
     "removeComments": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "target": "es2017",
+    "lib": ["ESNext"],
+    "target": "ES2022",
     "sourceMap": false,
     "outDir": "./dist",
     "baseUrl": "./lib",
-    "incremental": false
+    "incremental": false,
+    "strictNullChecks": true
   },
   "exclude": ["node_modules", "dist", "index.ts", "sample"]
 }

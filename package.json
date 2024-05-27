@@ -10,7 +10,9 @@
   "scripts": {
     "build": "tsc",
     "prebuild": "rimraf dist",
-    "dev": "npm run prebuild && tsc -w"
+    "dev": "npm run prebuild && tsc -w",
+    "lint": "eslint .",
+    "format": "prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -31,12 +33,17 @@
     "@faker-js/faker": "^8.0.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.3.0",
     "@nestjs/common": "^10.3.8",
     "@nestjs/core": "^10.3.8",
     "@types/node": "^20.12.12",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.2.5",
     "reflect-metadata": "^0.2.2",
     "rimraf": "^5.0.7",
     "rxjs": "^7.8.1",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.10.0"
   }
 }
