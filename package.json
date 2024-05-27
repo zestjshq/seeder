@@ -1,5 +1,5 @@
 {
-  "name": "nestjs-seeder",
+  "name": "@nestjs/seeder",
   "version": "0.3.2",
   "description": "An extension library for NestJS to perform seeding.",
   "main": "dist/index.js",
@@ -14,10 +14,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edwardanthony/nestjs-seeder"
+    "url": "git+https://github.com/zestjshq/seeder"
   },
-  "bugs": "https://github.com/edwardanthony/nestjs-seeder/issues",
-  "homepage": "https://github.com/edwardanthony/nestjs-seeder#readme",
+  "bugs": "https://github.com/zestjshq/seeder/issues",
+  "homepage": "https://github.com/zestjshq/seeder#readme",
   "keywords": [
     "seeding",
     "seeder",
@@ -25,18 +25,18 @@
     "nestjs",
     "seeder"
   ],
-  "author": "Edward Anthony <edwardanthony@fastmail.com>",
+  "author": "Cong Tran <trancong12102@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
     "@faker-js/faker": "^8.0.0"
   },
   "devDependencies": {
-    "@nestjs/common": "^9.4.0",
-    "@nestjs/core": "^9.4.0",
-    "@types/node": "^20.1.0",
-    "reflect-metadata": "^0.1.13",
-    "rimraf": "^5.0.0",
+    "@nestjs/common": "^10.3.8",
+    "@nestjs/core": "^10.3.8",
+    "@types/node": "^20.12.12",
+    "reflect-metadata": "^0.2.2",
+    "rimraf": "^5.0.7",
     "rxjs": "^7.8.1",
-    "typescript": "^5.0.4"
+    "typescript": "^5.4.5"
   }
 }
